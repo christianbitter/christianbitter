@@ -1,4 +1,4 @@
-baseURL = "https://domain.com"
+baseURL = "https://christianbitter.github.io/christianbitter"
 publishDir = "docs"
 title = "Christian Bitter"
 theme = "hugo-theme-m10c"
@@ -9,6 +9,7 @@ draft = false # if set to true, changes will not be published
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 enableEmoji = true
 canonifyurls = true
+relativeurls = true
 
 [params]
   author = "Christian Bitter"

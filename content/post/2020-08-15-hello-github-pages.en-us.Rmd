@@ -1,0 +1,21 @@
+---
+title: "Hello Github Pages"
+author: "Christian Bitter"
+date: '2020-08-15'
+categories:
+  - general
+tags: []
+draft: false
+coverImage: ../../../images/transparent.png  
+coverSize: partial # full: for maximum cover size
+metaAlignment: center
+disable_comments: true
+output:
+  blogdown::html_page:
+    toc: false
+    fig_width: 8
+    css: "/css/my-style.css"
+---
+
+After some time of the grid, my personal blog is now back online - here on github.
+Read you soon!
