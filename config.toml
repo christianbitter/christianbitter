@@ -1,4 +1,4 @@
-baseURL = "https://christianbitter.github.io/christianbitter.github.io/"
+baseURL = "https://domain.com"
 publishDir = "docs"
 title = "Christian Bitter"
 theme = "hugo-theme-m10c"
