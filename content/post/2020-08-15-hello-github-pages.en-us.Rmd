@@ -17,5 +17,6 @@ output:
     css: "/css/my-style.css"
 ---
 
-After some time of the grid, my personal blog is now back online - here on github.
+After some time of the grid, my personal blog is now back online - here on github. As a potential source of inspiration and documentation, I can highly recommend the following blogpost, which enabled me to set this up here - Thanks to [Aurora Mareviv and Tales of Fr](https://aurora-mareviv.github.io/talesofr/2018/02/r-blogdown-setup-in-github-2/#a-new-post-in-blogdown).
+
 Read you soon!
