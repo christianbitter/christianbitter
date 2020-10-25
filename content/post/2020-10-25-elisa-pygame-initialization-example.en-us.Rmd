@@ -1,0 +1,28 @@
+---
+title: Elisa - Pygame Initialization Example
+author: Christian Bitter
+date: '2020-10-25'
+slug: elisa-pygame-initialization-example.en-us
+categories:
+  - General
+tags:
+  - Elisa
+  - Game Programming
+  - Python
+  - pygame
+disable_comments: false
+output:
+  blogdown::html_page:
+    toc: false
+    fig_width: 8
+    css: "/css/my-style.css"
+---
+
+Dear readership today's update is focused on our Python game programming series called Elisa. 
+While the last time we actually had a peek into how large game systems can be organized following a data-oriented approach, using the Entity-Component-System Pattern, today we are going to stuff a whole that has been sitting in this
+series since its inception. That is, our series started with a ready-to-use python code template that simply throw
+a lot of plumbing code at you for you to reuse. However, this hole has been stuffed somewhat.
+
+If you head over to [Elisa](https://github.com/christianbitter/elisa), you will see a new example, elisa_0_init.py. In this example, we are going to look at initializing pygame and setting up a software-rasterizer-powered window for our drawing experiments. We then enter the game loop, the principle architectural pattern for running interactive simulations like games. This example, will not do much, it will simply sit there for you to exit. Critically, for somewhat more complex systems we register a handler function that is invoked by pygame when quiting. This enables us to throw any finalization and shutdown logic at our game that needs to run as part of the pygame environment closing.
+
+As always, we hope that you find the example useful. Let us know how it can be improved or even contribute to our effort if you desire.

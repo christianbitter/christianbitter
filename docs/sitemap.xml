@@ -3,52 +3,72 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://christianbitter.github.io/christianbitter/categories/</loc>
+    <loc>/categories/</loc>
+    <lastmod>2020-10-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-10-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/elisa/</loc>
+    <lastmod>2020-10-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/elisa-pygame-initialization-example.en-us/</loc>
+    <lastmod>2020-10-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/game-programming/</loc>
+    <lastmod>2020-10-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/general/</loc>
+    <lastmod>2020-10-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2020-10-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/pygame/</loc>
+    <lastmod>2020-10-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/python/</loc>
+    <lastmod>2020-10-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-10-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ecs/</loc>
     <lastmod>2020-10-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://christianbitter.github.io/christianbitter/</loc>
+    <loc>/post/elisa-entity-component-system/</loc>
     <lastmod>2020-10-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://christianbitter.github.io/christianbitter/tags/elisa/</loc>
+    <loc>/tags/entity-component-system/</loc>
     <lastmod>2020-10-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://christianbitter.github.io/christianbitter/post/elisa-entity-component-system/</loc>
-    <lastmod>2020-10-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://christianbitter.github.io/christianbitter/tags/game-programming/</loc>
-    <lastmod>2020-10-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://christianbitter.github.io/christianbitter/categories/general/</loc>
-    <lastmod>2020-10-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://christianbitter.github.io/christianbitter/post/</loc>
-    <lastmod>2020-10-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://christianbitter.github.io/christianbitter/tags/python/</loc>
-    <lastmod>2020-10-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://christianbitter.github.io/christianbitter/tags/</loc>
-    <lastmod>2020-10-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://christianbitter.github.io/christianbitter/post/2020-08-15-hello-github-pages/</loc>
+    <loc>/post/2020-08-15-hello-github-pages/</loc>
     <lastmod>2020-08-15T00:00:00+00:00</lastmod>
   </url>
   

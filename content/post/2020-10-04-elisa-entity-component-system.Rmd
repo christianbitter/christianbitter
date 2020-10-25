@@ -9,6 +9,9 @@ tags:
   - Game Programming
   - Elisa
   - Python
+  - Entity-Component-System
+  - ECS
+  - Pygame
 draft: false
 coverImage: ../../../images/transparent.png  
 coverSize: partial # full: for maximum cover size
