@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pygame on Christian Bitter</title>
-    <link>/tags/pygame/</link>
+    <link>https://christianbitter.github.io/tags/pygame/</link>
     <description>Recent content in Pygame on Christian Bitter</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 25 Oct 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/pygame/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://christianbitter.github.io/tags/pygame/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Elisa - Pygame Initialization Example</title>
-      <link>/post/elisa-pygame-initialization-example.en-us/</link>
+      <link>https://christianbitter.github.io/post/elisa-pygame-initialization-example.en-us/</link>
       <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/elisa-pygame-initialization-example.en-us/</guid>
+      <guid>https://christianbitter.github.io/post/elisa-pygame-initialization-example.en-us/</guid>
       <description>Dear readership today’s update is focused on our Python game programming series called Elisa.While the last time we actually had a peek into how large game systems can be organized following a data-oriented approach, using the Entity-Component-System Pattern, today we are going to stuff a whole that has been sitting in thisseries since its inception. That is, our series started with a ready-to-use python code template that simply throwa lot of plumbing code at you for you to reuse.</description>
     </item>
     
     <item>
       <title>Elisa - Entity Component System</title>
-      <link>/post/elisa-entity-component-system/</link>
+      <link>https://christianbitter.github.io/post/elisa-entity-component-system/</link>
       <pubDate>Sun, 04 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/elisa-entity-component-system/</guid>
+      <guid>https://christianbitter.github.io/post/elisa-entity-component-system/</guid>
       <description>After quite a while, I have finally made an update to my attempt at using Python and pygame for Game Programming. You will be able to find the newest addition to the Elisa repository in the form of example number 16. In this I take the time to actually create a small entity component system.
 The Entity Component System design pattern is data-centric approach to enable building complex game architectures using a compositional metaphor as opposed to the traditional object-oriented decomposition approach.</description>
     </item>
