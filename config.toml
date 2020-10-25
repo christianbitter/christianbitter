@@ -10,10 +10,22 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 enableEmoji = true
 canonifyurls = true
 relativeurls = true
+sectionPagesMenu = "main"
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
 
 [params]
   author = "Christian Bitter"
   description = "I am a Business Intelligence Leader and full-stack Data Scientist in the Digital Agriculture space."
+  menu_item_separator = " - "
   [[params.social]]
     name = "github"
     url = "https://github.com/christianbitter"
