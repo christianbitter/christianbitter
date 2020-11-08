@@ -8,12 +8,12 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 08 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://christianbitter.github.io/tags/pygame/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Elisa - Animation</title>
-      <link>https://christianbitter.github.io/post/2020-11-08-elisa-animation/</link>
+      <title>Elisa - Sprite Sheet-based Animation</title>
+      <link>https://christianbitter.github.io/post/elisa-pygame-sprite-animation.en-us/</link>
       <pubDate>Sun, 08 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://christianbitter.github.io/post/2020-11-08-elisa-animation/</guid>
-      <description>Hello Elisa fans. Today&amp;rsquo;s post is about one of the latest examples, that we added to the repository. This example, elisa_7_sprite_animation is basically an abstraction and cleanup of some of our past endeavors.
+      <guid>https://christianbitter.github.io/post/elisa-pygame-sprite-animation.en-us/</guid>
+      <description>Hello Elisa fans. Today’s post is about one of the latest examples, that we added to the repository. This example, elisa_7_sprite_animation is basically an abstraction and cleanup of some of our past endeavors.
 Specifically, we introduced types dealing with sprites like the individual sprite, which is basically the collection of attributes defining some piece of graphics on the game screen. Critically, sprites are defined in terms of an underlying image container like a jpg or png file.</description>
     </item>
     
