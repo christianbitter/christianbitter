@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>Elisa - Animation // Christian Bitter</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.76.5" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Christian Bitter" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://christianbitter.github.io/css/main.min.88e7083eff65effb7485b6e6f38d10afbec25093a6fac42d734ce9024d3defbd.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Elisa - Animation"/>
+<meta name="twitter:description" content="Hello Elisa fans. Today&rsquo;s post is about one of the latest examples, that we added to the repository. This example, elisa_7_sprite_animation is basically an abstraction and cleanup of some of our past endeavors.
+Specifically, we introduced types dealing with sprites like the individual sprite, which is basically the collection of attributes defining some piece of graphics on the game screen. Critically, sprites are defined in terms of an underlying image container like a jpg or png file."/>
+
+    <meta property="og:title" content="Elisa - Animation" />
+<meta property="og:description" content="Hello Elisa fans. Today&rsquo;s post is about one of the latest examples, that we added to the repository. This example, elisa_7_sprite_animation is basically an abstraction and cleanup of some of our past endeavors.
+Specifically, we introduced types dealing with sprites like the individual sprite, which is basically the collection of attributes defining some piece of graphics on the game screen. Critically, sprites are defined in terms of an underlying image container like a jpg or png file." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://christianbitter.github.io/post/2020-11-08-elisa-animation/" />
+<meta property="article:published_time" content="2020-11-08T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-11-08T00:00:00+00:00" />
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://christianbitter.github.io/"><img class="app-header-avatar" src="../../avatar.jpg" alt="Christian Bitter" /></a>
+      <h1>Christian Bitter</h1>
+      <p>I am a Business Intelligence Leader and full-stack Data Scientist in the Digital Agriculture space.</p>
+      <div class="app-header-social">
+        
+          <a target="_blank" href="https://github.com/christianbitter" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://twitter.com/christi26164848" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-twitter">
+  <title>twitter</title>
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+</svg></a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Elisa - Animation</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Nov 8, 2020
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          4 min read
+        </div><div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line>
+</svg>
+          <a class="tag" href="https://christianbitter.github.io/tags/elisa/">Elisa</a><a class="tag" href="https://christianbitter.github.io/tags/pygame/">Pygame</a></div></div>
+    </header>
+    <div class="post-content">
+      <p><img src="elisa.PNG" alt="Elisa 15"></p>
+<p>Hello Elisa fans. Today&rsquo;s post is about one of the latest examples, that we added to the repository. This example, elisa_7_sprite_animation is basically an abstraction and cleanup of some of our past endeavors.</p>
+<p>Specifically, we introduced types dealing with sprites like the individual sprite, which is basically the collection of attributes defining some piece of graphics on the game screen. Critically, sprites are defined in terms of an underlying image container like a jpg or png file. Usually, we see a sprite as a single image on screen, such as a single animation frame or the image of a house in a 2D city. Naturally, we associate a name, some technical id and a visibility tag with a sprite. If multiple sprites are stacked, there z ordering can be used to define some sort of importance among them. Other than that, the core behaviour from our Sprite type is to initialize a sprite from the mentioned image source and prepare it for being drawn to the screen using Pygame&rsquo;s blit or any other method.</p>
+<p>On top of that, the Sprite sheet is introduced. Sprite sheets are collections of individual image pieces/ sprites. Usually, this collection is scoped to a single entity, domain, or game character like having all individual images that make up the distinct animation sequences of your game&rsquo;s main character in one image file. For Elisa, we defined a meta-data descriptor on top of such a raw image file. This descriptor is a json file that indexes individual sprite animation sequences within the larger image container. Surely, such a sequence can also be bound just a single image. However, the point of sprite sheets is to avoid the overhead of having to go through locating, reading, and dealing with single images. Instead, individual pieces within a larger surface are efficiently indexed. Most importantly, the Sprite Sheet&rsquo;s index is a map, so that you reference individual images by logical names. This will come in handy in the next step.</p>
+<p>For simplicity, a third type SpriteAnimation (as opposed to key frame-based animation) is introduced, which allows us to conveniently bind together single frames coming from the mentioned sprite sheet in a linear sequence over time. This linear sequence within a defined period is what makes up the concept of an animation. If the time between consecutive images is too large, it appears as if there was no motion at all, if it is too small we see a too rapid succession of images and the intended mental concept (walking, jumping) is not invoked at the viewer&rsquo;s side. Irrespective of this, our animation type defines some data slots for the lengths of an animation the targeted number of animation frames to be displayed per second (frame per second) and respective methods to evoke the desired behaviour.</p>
+<p>Now, in elisa_7_sprite_animation we use these types to define two types of animation for our Elisa sprite. The first being an idling animation, where Elisa basically stands still at her place and the second animation being a walking animation. Both animations live in separate animation objects drawing their content from a single sprite sheet. From an interaction point of view, the demo allows you to press the left and right arrow keys to invoke the moving animation. However, we do not give any visual distinction between Elisa walking left or right. If no, key is pressed Elisa will idle. In the past, we cycled between these three (idle, walk left, walk right) sprite states via explicitly handling the keyboard interaction and setting flags. However, since an existing Elisa example has already introduced state machines, we make use of a state machine here as well. Naturally, our Elisa state machine defines three states (the ones mentioned), and transitions between them based on the keyboard input and the current state, i.e. if Elisa is idling and a key is pressed, Elisa will enter the walking stage. On the other if Elisa is walking and the key is pressed, she continues walking else she will enter the idling stage again. As you will observe in the example, the dynamics of the state machine are separated somewhat well. However, the coupling of state machine with animation system is still part of the example. Naturally, to improve the example we would devise a way to bind the two together elsewhere keeping our main logic container focused.</p>
+<p>We hope that you like the example so head over to <a href="#1">elisa_7_sprite_animation</a>. As always, let us know what you think in the comments, check out Elisa and overall, just enjoy the ride!</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

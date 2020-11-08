@@ -3,8 +3,9 @@ title: "Hello Github Pages"
 author: "Christian Bitter"
 date: '2020-08-15'
 categories:
-  - general
-tags: []
+  - General
+tags:
+  - Personal
 draft: false
 coverImage: ../../../images/transparent.png  
 coverSize: partial # full: for maximum cover size

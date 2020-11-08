@@ -6,11 +6,12 @@ languageCode = "en-us"
 defaultContentLanguage = "en-us"
 paginate = 5
 draft = false # if set to true, changes will not be published
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
 enableEmoji = true
 canonifyurls = true
 relativeurls = true
 sectionPagesMenu = "main"
+
 
 [menu]
   [[menu.main]]
