@@ -1,0 +1,22 @@
+---
+title: Venturing into Pixel Art
+author: Christian Bitter
+date: '2020-11-12'
+slug: []
+categories:
+  - Pixel Art
+tags:
+  - aseprite
+  - pixel-art
+  - beginner
+disable_comments: false
+output:
+  blogdown::html_page:
+    toc: false
+    fig_width: 8
+    css: "/css/my-style.css"
+---
+![A Pixel Art - Polygon](/figures/shade_poly.png)  
+Dear fellows, lately I have dabbled with drawing some simple 2D pixel art. As a great wannabe, I acquired Aseprite, one of the du-jour tools to draw pixel art. Let's see if the choice of software goes along with talent and output quality. In the near future we plan to make parts of our progress available in a git repository, so that you can use our playground experiments for your own purpose.
+
+With that, we wish you a great artsy time.
