@@ -14,7 +14,7 @@
     {{ template "_internal/twitter_cards.html" . }}
     {{ template "_internal/opengraph.html" . }}
     
-    <!-- TODO: move into separate css -->
+    <!-- TODO: move into base css and see where it needs to be placed-->
     <style>
       ul.menu {
         list-style-type: none;
@@ -38,7 +38,7 @@
       <nav>
         <ul class="menu">
           {{ range .Site.Menus.main }}
-          <li><a target="_self" href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+          <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
           {{ end }}
         </ul>
         <hr/>

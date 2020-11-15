@@ -18,18 +18,19 @@ disqusShortname = ""
     identifier = "home"
     name = "Home"
     url = "/post/"
+    weight = -110
+    
   [[menu.main]]
     identifier = "tags"
     name = "Tags"
     url = "/tags/"
+    weight = -100
+    
   [[menu.main]]
     identifier = "categories"
     name = "Categories"
     url = "/categories/"
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url  = "/about/"
+    weight = -90
 
 [params]
   author = "Christian Bitter"
