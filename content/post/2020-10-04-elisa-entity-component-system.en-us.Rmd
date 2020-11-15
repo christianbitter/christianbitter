@@ -17,11 +17,6 @@ coverImage: ../../../images/transparent.png
 coverSize: partial # full: for maximum cover size
 metaAlignment: center
 disable_comments: false
-output:
-  blogdown::html_page:
-    toc: false
-    fig_width: 8
-    css: "/css/my-style.css"
 ---
 After quite a while, I have finally made an update to my attempt at using Python and pygame for Game Programming. You will be able to find the newest addition to the Elisa repository in the form of example number 16. In this I take the time to actually create a small entity component system.
 

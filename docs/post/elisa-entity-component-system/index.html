@@ -23,13 +23,43 @@ The Entity Component System design pattern is data-centric approach to enable bu
 <meta property="article:published_time" content="2020-10-04T00:00:00+00:00" />
 <meta property="article:modified_time" content="2020-10-04T00:00:00+00:00" />
 
+    
+    
+    <style>
+      ul.menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      ul.meu li {
+        border-left: 10px solid #666;
+        border-bottom: 1px solid #666;
+      }      
+    </style>
 
   </head>
   <body>
     <header class="app-header">
       <a href="https://christianbitter.github.io/"><img class="app-header-avatar" src="../../avatar.jpg" alt="Christian Bitter" /></a>
       <h1>Christian Bitter</h1>
-      <p>I am a Business Intelligence Leader and full-stack Data Scientist in the Digital Agriculture space.</p>
+      <p>I am a Business Intelligence Leader and full-stack Data Scientist in the digital Agriculture space.</p>
+      
+      <nav>
+        <ul class="menu">
+          
+          <li><a target="_self" href="../../about/">About</a></li>
+          
+          <li><a target="_self" href="../../categories/">Categories</a></li>
+          
+          <li><a target="_self" href="../../post/">Home</a></li>
+          
+          <li><a target="_self" href="../../tags/">Tags</a></li>
+          
+        </ul>
+        <hr/>
+      </nav>      
+      
       <div class="app-header-social">
         
           <a target="_blank" href="https://github.com/christianbitter" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
@@ -74,7 +104,6 @@ The Entity Component System design pattern is data-centric approach to enable bu
       
 <link href="../../rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
 <script src="../../rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
-  <link rel="stylesheet" href="../../css/my-style.css" type="text/css" />
 
 
 <p>After quite a while, I have finally made an update to my attempt at using Python and pygame for Game Programming. You will be able to find the newest addition to the Elisa repository in the form of example number 16. In this I take the time to actually create a small entity component system.</p>

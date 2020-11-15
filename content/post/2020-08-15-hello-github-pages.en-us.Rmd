@@ -2,6 +2,7 @@
 title: "Hello Github Pages"
 author: "Christian Bitter"
 date: '2020-08-15'
+slug: welcome-github-pages
 categories:
   - General
 tags:

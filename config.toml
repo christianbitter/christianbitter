@@ -6,26 +6,34 @@ languageCode = "en-us"
 defaultContentLanguage = "en-us"
 paginate = 5
 draft = false # if set to true, changes will not be published
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit", "\\.utf8", "\\.md$"]
 enableEmoji = true
 canonifyurls = true
 relativeurls = true
-sectionPagesMenu = "main"
 
+disqusShortname = ""
 
 [menu]
   [[menu.main]]
     identifier = "home"
     name = "Home"
-    url = "/"
+    url = "/post/"
   [[menu.main]]
     identifier = "tags"
     name = "Tags"
     url = "/tags/"
+  [[menu.main]]
+    identifier = "categories"
+    name = "Categories"
+    url = "/categories/"
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url  = "/about/"
 
 [params]
   author = "Christian Bitter"
-  description = "I am a Business Intelligence Leader and full-stack Data Scientist in the Digital Agriculture space."
+  description = "I am a Business Intelligence Leader and full-stack Data Scientist in the digital Agriculture space."
   menu_item_separator = " - "
   [[params.social]]
     name = "github"
