@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en-us">
   <head>
-    <title>Elisa - Pygame Fonts and Drawing Text // Christian Bitter</title>
+    <title>Elisa - Great News and Pygame Fonts and Drawing Text // Christian Bitter</title>
     <meta charset="utf-8" />
     <meta name="generator" content="Hugo 0.76.5" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,11 +11,11 @@
 
     
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Elisa - Pygame Fonts and Drawing Text"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="Elisa - Great News and Pygame Fonts and Drawing Text"/>
+<meta name="twitter:description" content="Hi fellow Pygame developers. Long awaited and now it is here - Pygame 2.0 has arrived. The list of changes is massive, while there are a lot of- bug fixes- documentation, new examples, and example code clean up- stability improvements, refactorings and API simplifications like type hintsand the like that which will undoubtedly make our day-to-day life with Pygame considerably easier and overall more enjoyable, there are also big bang changes like:- support for touch and gestures- SDL 2 support and- OpenGL 3."/>
 
-    <meta property="og:title" content="Elisa - Pygame Fonts and Drawing Text" />
-<meta property="og:description" content="" />
+    <meta property="og:title" content="Elisa - Great News and Pygame Fonts and Drawing Text" />
+<meta property="og:description" content="Hi fellow Pygame developers. Long awaited and now it is here - Pygame 2.0 has arrived. The list of changes is massive, while there are a lot of- bug fixes- documentation, new examples, and example code clean up- stability improvements, refactorings and API simplifications like type hintsand the like that which will undoubtedly make our day-to-day life with Pygame considerably easier and overall more enjoyable, there are also big bang changes like:- support for touch and gestures- SDL 2 support and- OpenGL 3." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://christianbitter.github.io/post/2020-11-22-elisa-pygame-fonts-and-drawing-text/" />
 <meta property="article:published_time" content="2020-11-22T00:00:00+00:00" />
@@ -74,7 +74,7 @@
       
   <article class="post">
     <header class="post-header">
-      <h1 class ="post-title">Elisa - Pygame Fonts and Drawing Text</h1>
+      <h1 class ="post-title">Elisa - Great News and Pygame Fonts and Drawing Text</h1>
       <div class="post-meta">
         <div>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
@@ -88,7 +88,7 @@
   <title>clock</title>
   <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
 </svg>
-          0 min read
+          3 min read
         </div><div>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
   <title>tag</title>
@@ -102,7 +102,19 @@
 <script src="../../rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
 
 
-
+<p>Hi fellow Pygame developers. Long awaited and now it is here - <a href="https://github.com/pygame/pygame/releases/tag/2.0.0">Pygame 2.0</a> has arrived. The list of changes is massive, while there are a lot of
+- bug fixes
+- documentation, new examples, and example code clean up
+- stability improvements, refactorings and API simplifications like type hints
+and the like that which will undoubtedly make our day-to-day life with Pygame considerably easier and overall more enjoyable, there are also big bang changes like:
+- support for touch and gestures
+- SDL 2 support and
+- OpenGL 3.0 and Vulkan support
+Massive thanks to the developers and all contributors - I love it! Surely, we are going to delve into some of these topics in the future.</p>
+<p>In this week’s Elisa entry, we are going to explore some of the artistic concepts a beginner can use to quickly begin developing simple games. That is, we have a look at what Pygame offers in terms of handling fonts and drawing text to the screen. In one way or another almost any computer game requires text when interacting with the user, be it in the form of menus, dialogue or simply to convey the current game state (points, time) to the user.</p>
+<p>Working with text is fairly straight forward in Pygame. You select your particular font for rendering text to a particular surface. This surface can then be blit to your screen. Critically, text cannot span more than one line, as Pygame does not offer any form of word-breaking, wrapping or space-adjustment. So, if you want your text to be multiple lines, you have to break it yourself, using your own logic, i.e. using the extent of rendered text surface in order to decide if it should be broken up or not.</p>
+<p>When drawing text, you can choose any font that is installed on your system. If you are unsure, Pygame offers <a href="https://www.pygame.org/docs/ref/font.html#pygame.font.get_fonts"><code>pygame.font.get_fonts</code></a>. to list all fonts on your system, but be aware sometimes these may not actually exist, so a call to <code>pygame.font.match_font</code> may be helpful, i.e. you retrieve the path to the font you are looking for (if it exists). Use this path to instantiate a Font instance. Then pick a font size, apply some styling like font weighing, or decorations like underline or italic font, and then render your text at the place you want using the color you please. All of this is exposed via the <a href="https://www.pygame.org/docs/ref/font.html">pygame.font</a> module. Reads easy and straightforward? Yes, it is. So if you are interested in getting a glimpse into how you can use text in your Pygame App, head over to our <a href="https://github.com/christianbitter/elisa">Elisa - Font and Text example</a>.</p>
+<p>Happy developing and read you soon!</p>
 
     </div>
     <div class="post-footer">

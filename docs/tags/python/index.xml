@@ -8,12 +8,12 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 22 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://christianbitter.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Elisa - Pygame Fonts and Drawing Text</title>
+      <title>Elisa - Great News and Pygame Fonts and Drawing Text</title>
       <link>https://christianbitter.github.io/post/2020-11-22-elisa-pygame-fonts-and-drawing-text/</link>
       <pubDate>Sun, 22 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>https://christianbitter.github.io/post/2020-11-22-elisa-pygame-fonts-and-drawing-text/</guid>
-      <description></description>
+      <description>Hi fellow Pygame developers. Long awaited and now it is here - Pygame 2.0 has arrived. The list of changes is massive, while there are a lot of- bug fixes- documentation, new examples, and example code clean up- stability improvements, refactorings and API simplifications like type hintsand the like that which will undoubtedly make our day-to-day life with Pygame considerably easier and overall more enjoyable, there are also big bang changes like:- support for touch and gestures- SDL 2 support and- OpenGL 3.</description>
     </item>
     
     <item>
