@@ -6,7 +6,16 @@
     <description>Recent content in General on Christian Bitter</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://christianbitter.github.io/categories/general/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 22 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://christianbitter.github.io/categories/general/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Elisa - Pygame Fonts and Drawing Text</title>
+      <link>https://christianbitter.github.io/post/2020-11-22-elisa-pygame-fonts-and-drawing-text/</link>
+      <pubDate>Sun, 22 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://christianbitter.github.io/post/2020-11-22-elisa-pygame-fonts-and-drawing-text/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Elisa - Sprite Sheet-based Animation</title>
       <link>https://christianbitter.github.io/post/elisa-pygame-sprite-animation/</link>

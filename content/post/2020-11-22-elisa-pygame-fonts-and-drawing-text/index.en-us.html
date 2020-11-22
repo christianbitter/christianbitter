@@ -1,0 +1,17 @@
+<link href="index.en-us_files/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="index.en-us_files/anchor-sections/anchor-sections.js"></script>
+
+
+<p>Hi fellow Pygame developers. Long awaited and now it is here - <a href="https://github.com/pygame/pygame/releases/tag/2.0.0">Pygame 2.0</a> has arrived. The list of changes is massive, while there are a lot of
+- bug fixes
+- documentation, new examples, and example code clean up
+- stability improvements, refactorings and API simplifications like type hints
+and the like that which will undoubtedly make our day-to-day life with Pygame considerably easier and overall more enjoyable, there are also big bang changes like:
+- support for touch and gestures
+- SDL 2 support and
+- OpenGL 3.0 and Vulkan support
+Massive thanks to the developers and all contributors - I love it! Surely, we are going to delve into some of these topics in the future.</p>
+<p>In this week’s Elisa entry, we are going to explore some of the artistic concepts a beginner can use to quickly begin developing simple games. That is, we have a look at what Pygame offers in terms of handling fonts and drawing text to the screen. In one way or another almost any computer game requires text when interacting with the user, be it in the form of menus, dialogue or simply to convey the current game state (points, time) to the user.</p>
+<p>Working with text is fairly straight forward in Pygame. You select your particular font for rendering text to a particular surface. This surface can then be blit to your screen. Critically, text cannot span more than one line, as Pygame does not offer any form of word-breaking, wrapping or space-adjustment. So, if you want your text to be multiple lines, you have to break it yourself, using your own logic, i.e. using the extent of rendered text surface in order to decide if it should be broken up or not.</p>
+<p>When drawing text, you can choose any font that is installed on your system. If you are unsure, Pygame offers <a href="https://www.pygame.org/docs/ref/font.html#pygame.font.get_fonts"><code>pygame.font.get_fonts</code></a>. to list all fonts on your system, but be aware sometimes these may not actually exist, so a call to <code>pygame.font.match_font</code> may be helpful, i.e. you retrieve the path to the font you are looking for (if it exists). Use this path to instantiate a Font instance. Then pick a font size, apply some styling like font weighing, or decorations like underline or italic font, and then render your text at the place you want using the color you please. All of this is exposed via the <a href="https://www.pygame.org/docs/ref/font.html">pygame.font</a> module. Reads easy and straightforward? Yes, it is. So if you are interested in getting a glimpse into how you can use text in your Pygame App, head over to our <a href="https://github.com/christianbitter/elisa">Elisa - Font and Text example</a>.</p>
+<p>Happy developing and read you soon!</p>
