@@ -11,7 +11,7 @@ enableEmoji = true
 canonifyurls = true
 relativeurls = true
 
-disqusShortname = ""
+disqusShortname = "christianbitter"
 
 [menu]
   [[menu.main]]
