@@ -12,6 +12,7 @@ canonifyurls = true
 relativeurls = true
 
 disqusShortname = "christianbitter"
+googleAnalytics = "UA-39601084-1"
 
 [menu]
   [[menu.main]]
