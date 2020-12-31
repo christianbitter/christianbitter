@@ -3,17 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://christianbitter.github.io/tags/beginner/</loc>
-    <lastmod>2020-11-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://christianbitter.github.io/categories/</loc>
-    <lastmod>2020-11-22T00:00:00+00:00</lastmod>
+    <lastmod>2020-12-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://christianbitter.github.io/</loc>
+    <lastmod>2020-12-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://christianbitter.github.io/post/2020-12-30-end-of-year/</loc>
+    <lastmod>2020-12-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://christianbitter.github.io/tags/general/</loc>
+    <lastmod>2020-12-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://christianbitter.github.io/categories/general/</loc>
+    <lastmod>2020-12-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://christianbitter.github.io/post/</loc>
+    <lastmod>2020-12-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://christianbitter.github.io/tags/</loc>
+    <lastmod>2020-12-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://christianbitter.github.io/tags/beginner/</loc>
     <lastmod>2020-11-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -28,27 +53,12 @@
   </url>
   
   <url>
-    <loc>https://christianbitter.github.io/categories/general/</loc>
-    <lastmod>2020-11-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://christianbitter.github.io/post/</loc>
-    <lastmod>2020-11-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://christianbitter.github.io/tags/pygame/</loc>
     <lastmod>2020-11-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://christianbitter.github.io/tags/python/</loc>
-    <lastmod>2020-11-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://christianbitter.github.io/tags/</loc>
     <lastmod>2020-11-22T00:00:00+00:00</lastmod>
   </url>
   
