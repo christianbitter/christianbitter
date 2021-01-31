@@ -2,74 +2,74 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Christian Bitter</title>
-    <link>https://christianbitter.github.io/</link>
+    <link>/</link>
     <description>Recent content on Christian Bitter</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://christianbitter.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 30 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>End of year</title>
-      <link>https://christianbitter.github.io/post/2020-12-30-end-of-year/</link>
+      <link>/post/2020-12-30-end-of-year/</link>
       <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://christianbitter.github.io/post/2020-12-30-end-of-year/</guid>
+      <guid>/post/2020-12-30-end-of-year/</guid>
       <description>As the end of the Gregorian year approaches once more, we take the time to get full-out sentimental on y’all.
 Clearly, 2020 has been a somewhat different year for the most of us. In the beginning of it, reports around the Coronavirus affecting China and its billion people surfaced and showed us a glimpse into a different reality. A reality that seemed so far away to be of any relevance to us.</description>
     </item>
     
     <item>
       <title>Elisa - Great News and Pygame Fonts and Drawing Text</title>
-      <link>https://christianbitter.github.io/post/2020-11-22-elisa-pygame-fonts-and-drawing-text/</link>
+      <link>/post/2020-11-22-elisa-pygame-fonts-and-drawing-text/</link>
       <pubDate>Sun, 22 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://christianbitter.github.io/post/2020-11-22-elisa-pygame-fonts-and-drawing-text/</guid>
+      <guid>/post/2020-11-22-elisa-pygame-fonts-and-drawing-text/</guid>
       <description>Hi fellow Pygame developers. Long awaited and now it is here - Pygame 2.0 has arrived. The list of changes is massive, while there are a lot of- bug fixes- documentation, new examples, and example code clean up- stability improvements, refactorings and API simplifications like type hintsand the like that which will undoubtedly make our day-to-day life with Pygame considerably easier and overall more enjoyable, there are also big bang changes like:- support for touch and gestures- SDL 2 support and- OpenGL 3.</description>
     </item>
     
     <item>
       <title>Venturing into Pixel Art</title>
-      <link>https://christianbitter.github.io/post/2020-11-12-venturing-into-pixel-art/</link>
+      <link>/post/2020-11-12-venturing-into-pixel-art/</link>
       <pubDate>Thu, 12 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://christianbitter.github.io/post/2020-11-12-venturing-into-pixel-art/</guid>
+      <guid>/post/2020-11-12-venturing-into-pixel-art/</guid>
       <description>Dear fellows, lately I have dabbled with drawing some simple 2D pixel art. As a great wannabe, I acquired Aseprite, one of the du-jour tools to draw pixel art. Let’s see if the choice of software goes along with talent and output quality. In the near future we plan to make parts of our progress available in a git repository, so that you can use our playground experiments for your own purpose.</description>
     </item>
     
     <item>
       <title>Elisa - Sprite Sheet-based Animation</title>
-      <link>https://christianbitter.github.io/post/elisa-pygame-sprite-animation/</link>
+      <link>/post/elisa-pygame-sprite-animation/</link>
       <pubDate>Sun, 08 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://christianbitter.github.io/post/elisa-pygame-sprite-animation/</guid>
+      <guid>/post/elisa-pygame-sprite-animation/</guid>
       <description>Hello Elisa fans. Today’s post is about one of the latest examples, that we added to the repository. This example, elisa_7_sprite_animation is basically an abstraction and cleanup of some of our past endeavors.
 Specifically, we introduced types dealing with sprites like the individual sprite, which is basically the collection of attributes defining some piece of graphics on the game screen. Critically, sprites are defined in terms of an underlying image container like a jpg or png file.</description>
     </item>
     
     <item>
       <title>Elisa - Pygame Initialization Example</title>
-      <link>https://christianbitter.github.io/post/elisa-pygame-initialization-example/</link>
+      <link>/post/elisa-pygame-initialization-example/</link>
       <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://christianbitter.github.io/post/elisa-pygame-initialization-example/</guid>
+      <guid>/post/elisa-pygame-initialization-example/</guid>
       <description>Dear readership today’s update is focused on our Python game programming series called Elisa.While the last time we actually had a peek into how large game systems can be organized following a data-oriented approach, using the Entity-Component-System Pattern, today we are going to stuff a whole that has been sitting in thisseries since its inception. That is, our series started with a ready-to-use python code template that simply throwa lot of plumbing code at you for you to reuse.</description>
     </item>
     
     <item>
       <title>Elisa - Entity Component System</title>
-      <link>https://christianbitter.github.io/post/elisa-entity-component-system/</link>
+      <link>/post/elisa-entity-component-system/</link>
       <pubDate>Sun, 04 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://christianbitter.github.io/post/elisa-entity-component-system/</guid>
+      <guid>/post/elisa-entity-component-system/</guid>
       <description>After quite a while, I have finally made an update to my attempt at using Python and pygame for Game Programming. You will be able to find the newest addition to the Elisa repository in the form of example number 16. In this I take the time to actually create a small entity component system.
 The Entity Component System design pattern is data-centric approach to enable building complex game architectures using a compositional metaphor as opposed to the traditional object-oriented decomposition approach.</description>
     </item>
     
     <item>
       <title>Hello Github Pages</title>
-      <link>https://christianbitter.github.io/post/welcome-github-pages/</link>
+      <link>/post/welcome-github-pages/</link>
       <pubDate>Sat, 15 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://christianbitter.github.io/post/welcome-github-pages/</guid>
+      <guid>/post/welcome-github-pages/</guid>
       <description>After some time of the grid, my personal blog is now back online - here on github. As a potential source of inspiration and documentation, I can highly recommend the following blogpost, which enabled me to set this up here - Thanks to Aurora Mareviv and Tales of Fr.
 Read you soon!</description>
     </item>

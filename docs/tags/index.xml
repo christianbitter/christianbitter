@@ -2,107 +2,107 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Christian Bitter</title>
-    <link>https://christianbitter.github.io/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on Christian Bitter</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://christianbitter.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 30 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>General</title>
-      <link>https://christianbitter.github.io/tags/general/</link>
+      <link>/tags/general/</link>
       <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://christianbitter.github.io/tags/general/</guid>
+      <guid>/tags/general/</guid>
       <description></description>
     </item>
     
     <item>
       <title>beginner</title>
-      <link>https://christianbitter.github.io/tags/beginner/</link>
+      <link>/tags/beginner/</link>
       <pubDate>Sun, 22 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://christianbitter.github.io/tags/beginner/</guid>
+      <guid>/tags/beginner/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Game Programming</title>
-      <link>https://christianbitter.github.io/tags/game-programming/</link>
+      <link>/tags/game-programming/</link>
       <pubDate>Sun, 22 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://christianbitter.github.io/tags/game-programming/</guid>
+      <guid>/tags/game-programming/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Pygame</title>
-      <link>https://christianbitter.github.io/tags/pygame/</link>
+      <link>/tags/pygame/</link>
       <pubDate>Sun, 22 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://christianbitter.github.io/tags/pygame/</guid>
+      <guid>/tags/pygame/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Python</title>
-      <link>https://christianbitter.github.io/tags/python/</link>
+      <link>/tags/python/</link>
       <pubDate>Sun, 22 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://christianbitter.github.io/tags/python/</guid>
+      <guid>/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>aseprite</title>
-      <link>https://christianbitter.github.io/tags/aseprite/</link>
+      <link>/tags/aseprite/</link>
       <pubDate>Thu, 12 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://christianbitter.github.io/tags/aseprite/</guid>
+      <guid>/tags/aseprite/</guid>
       <description></description>
     </item>
     
     <item>
       <title>pixel-art</title>
-      <link>https://christianbitter.github.io/tags/pixel-art/</link>
+      <link>/tags/pixel-art/</link>
       <pubDate>Thu, 12 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://christianbitter.github.io/tags/pixel-art/</guid>
+      <guid>/tags/pixel-art/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Elisa</title>
-      <link>https://christianbitter.github.io/tags/elisa/</link>
+      <link>/tags/elisa/</link>
       <pubDate>Sun, 08 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://christianbitter.github.io/tags/elisa/</guid>
+      <guid>/tags/elisa/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ECS</title>
-      <link>https://christianbitter.github.io/tags/ecs/</link>
+      <link>/tags/ecs/</link>
       <pubDate>Sun, 04 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://christianbitter.github.io/tags/ecs/</guid>
+      <guid>/tags/ecs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Entity-Component-System</title>
-      <link>https://christianbitter.github.io/tags/entity-component-system/</link>
+      <link>/tags/entity-component-system/</link>
       <pubDate>Sun, 04 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://christianbitter.github.io/tags/entity-component-system/</guid>
+      <guid>/tags/entity-component-system/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Personal</title>
-      <link>https://christianbitter.github.io/tags/personal/</link>
+      <link>/tags/personal/</link>
       <pubDate>Sat, 15 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://christianbitter.github.io/tags/personal/</guid>
+      <guid>/tags/personal/</guid>
       <description></description>
     </item>
     
