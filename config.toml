@@ -35,7 +35,7 @@ googleAnalytics = "UA-39601084-1"
 
 [params]
   author = "Christian Bitter"
-  description = "I am a Business Intelligence Leader and full-stack Data Scientist in the digital Agriculture space."
+  description = "I am a Business Intelligence Leader, full-stack Data Scientist in the digital Agriculture space. I am always on the look-out to use data and digital technology to deliver value that can profoundly transform people's life in positive sustainable way."
   menu_item_separator = " - "
   [[params.social]]
     name = "github"
