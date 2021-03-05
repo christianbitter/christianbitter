@@ -6,7 +6,17 @@
     <description>Recent content on Christian Bitter</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 31 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A full-stack data scientist in the mlops-sphere</title>
+      <link>/post/2021-02-03-a-full-stack-data-scientist-in-the-mlops-sphere/</link>
+      <pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2021-02-03-a-full-stack-data-scientist-in-the-mlops-sphere/</guid>
+      <description>Dear readership,
+In the past, when it came to content for this blog, I have mostly ventured into Python-based game development with our Elisa series. Surely, this is an important part of my personal interests and hopefully it is of some value to you. At the same time I have to recognize that while ideas are plentiful the creation of content takes time and is typically balanced with the many areas that demand our attention family and business among the most prominent ones.</description>
+    </item>
+    
     <item>
       <title>Elisa - Aseprite animation data classes</title>
       <link>/post/2021-01-31-elisa-aseprite-animation-data-classes/</link>
