@@ -67,8 +67,11 @@ ff_3f <- function() {
   # clean up the names
   names(data_df) <- c("date", "RmxRf", "SMB", "HML", "Rf");
 
-  # convert date from real to int
-  data_df <- data_df %>% dplyr::mutate(date = as.integer(date));
+  # convert date from real to int and convert rates to fractions
+  data_df <- data_df %>%
+    dplyr::mutate(date = as.integer(date)) %>%
+    dplyr::mutate(RmxRf = RmxRf / 100.,
+                  Rf = Rf / 100.);
 
   # the file contains monthly and yearly aggregate, so pay attention
   monthly_df <- data_df %>%

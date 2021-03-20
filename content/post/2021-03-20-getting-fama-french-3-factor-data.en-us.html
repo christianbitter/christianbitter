@@ -1,0 +1,91 @@
+---
+title: Getting Fama French 3 Factor Data
+author: Christian Bitter
+date: '2021-03-20'
+slug: []
+categories:
+  - Analytics
+tags:
+  - R
+  - Finance
+  - beginner
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>When analyzing and making investments we typically have to face a trade-off between
+how much risk (or uncertainty) we are going to allow to affect our investment,
+and how strong our appetite for gains or returns is. Typically, we know that
+an investment that has larger swings in either positive or negative direction
+and an investment that has more of such swings is an investment that we would consider
+as being riskier when compared to an investment that stays flatter overall
+(e.g, less pronounced swings and less dynamic). For example, putting 10$ bill in
+my pocket is less risky than putting it into a stock.</p>
+<p>A famous benchmark data set that charts the historic performance/ risk of bonds
+and stocks for the last 100 years or so, is the Fama French data set made available
+by Professor Kenneth French. Actually, there is a multitude of different data sets
+available on his website. But for the time being we focus on the 3 Factor data set.
+The data set provides an historic aggregation over many stocks and bonds traded
+by or on NYSE, AMEX, or NASDAQ. As such it serves as a perfect index to compare
+your asset or portfolio to.</p>
+<p>In order to use the data set in R, I wrote a small piece of code utilizing the
+base and typical tidyverse packages, i.e. readr for reading a csv file, dplyr
+for data engineering and lubridate for date handling.</p>
+<pre class="r"><code>#&#39;@title Auxiliary Data
+#&#39;@name ff_3f
+#&#39;@author Christian Bitter
+#&#39;@description Downloads the Fama French 3 Factor data set and structures it as
+#&#39;monthly and yearly components. Each component provides the same factors
+#&#39;More information about the data can be found Rm-Rf (the excess return on the market, value-weight return),
+#&#39;SMB (Small minus big), HML (High minus Low) and Rf (risk free rate).
+#&#39;here: \url{https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/f-f_factors.html}.
+#&#39;@returns A list with two entries yearly and monthly representing the FF yearly
+#&#39;and monthly aggregates.
+#&#39;@export
+ff_3f &lt;- function() {
+  library(readr);
+  library(dplyr);
+  library(lubridate);
+
+  fp &lt;- &quot;https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Research_Data_Factors_CSV.zip&quot;;
+  temp &lt;- tempfile()
+  download.file(fp, temp)
+  temp_dir &lt;- tempdir();
+
+  unzip(zipfile = temp, exdir = temp_dir);
+  data_fp &lt;- file.path(temp_dir, &quot;F-F_Research_Data_Factors.CSV&quot;);
+  data_df &lt;- readr::read_csv(data_fp, skip_empty_rows = T, skip = 2);
+  unlink(temp_dir);
+  unlink(temp);
+
+  # the original data contains the copyright in the last row, this will be empty
+  # so skip it.
+  data_df &lt;- data_df[-nrow(data_df), ];
+
+  # clean up the names
+  names(data_df) &lt;- c(&quot;date&quot;, &quot;RmxRf&quot;, &quot;SMB&quot;, &quot;HML&quot;, &quot;Rf&quot;);
+
+  # convert date from real to int and convert rates to fractions
+  data_df &lt;- data_df %&gt;%
+    dplyr::mutate(date = as.integer(date)) %&gt;%
+    dplyr::mutate(RmxRf = RmxRf / 100.,
+                  Rf = Rf / 100.);
+
+  # the file contains monthly and yearly aggregate, so pay attention
+  monthly_df &lt;- data_df %&gt;%
+    dplyr::filter(date &gt;= 10000) %&gt;%
+    dplyr::mutate(date = lubridate::ymd(date, truncated = 1L));
+
+  # since the yearly data is at most 2021 - we can filter out all rows &lt; 10000
+  yearly_df &lt;- data_df %&gt;%
+    dplyr::filter(date &lt; 10000) %&gt;%
+    dplyr::mutate(date = lubridate::ymd(date, truncated = 2L));
+
+  return(list(
+    &quot;yearly&quot; = yearly_df,
+    &quot;monthly&quot; = monthly_df
+  ));
+}</code></pre>
+<p>You will also find the function in the latest update to the cbFinance package on
+<a href="https://github.com/christianbitter/cbFinance">Github</a>.</p>

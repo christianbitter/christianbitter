@@ -25,10 +25,10 @@ if (!doNotTrack) {
 
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Getting Fama French 3 Factor Data"/>
-<meta name="twitter:description" content="When analyzing and making investments we typically have to face a trade-off between how much risk (or uncertainty) we are going to allow to affect our investment, and how strong our appetite for gains or returns is. Typically, we know that an investment that has larger swings in either positive or negative direction and an investment that has more of such swings is an investment that we would consider as being riskier when compared to an investment that stays flatter overall (e."/>
+<meta name="twitter:description" content="When analyzing and making investments we typically have to face a trade-off betweenhow much risk (or uncertainty) we are going to allow to affect our investment,and how strong our appetite for gains or returns is. Typically, we know thatan investment that has larger swings in either positive or negative directionand an investment that has more of such swings is an investment that we would consideras being riskier when compared to an investment that stays flatter overall(e."/>
 
     <meta property="og:title" content="Getting Fama French 3 Factor Data" />
-<meta property="og:description" content="When analyzing and making investments we typically have to face a trade-off between how much risk (or uncertainty) we are going to allow to affect our investment, and how strong our appetite for gains or returns is. Typically, we know that an investment that has larger swings in either positive or negative direction and an investment that has more of such swings is an investment that we would consider as being riskier when compared to an investment that stays flatter overall (e." />
+<meta property="og:description" content="When analyzing and making investments we typically have to face a trade-off betweenhow much risk (or uncertainty) we are going to allow to affect our investment,and how strong our appetite for gains or returns is. Typically, we know thatan investment that has larger swings in either positive or negative directionand an investment that has more of such swings is an investment that we would consideras being riskier when compared to an investment that stays flatter overall(e." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/post/2021-03-20-getting-fama-french-3-factor-data/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2021-03-20T00:00:00&#43;00:00" />
@@ -111,7 +111,11 @@ if (!doNotTrack) {
           <a class="tag" href="../../tags/r/">R</a><a class="tag" href="../../tags/finance/">Finance</a><a class="tag" href="../../tags/beginner/">beginner</a></div></div>
     </header>
     <div class="post-content">
-      <p>When analyzing and making investments we typically have to face a trade-off between
+      
+<script src="../../rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>When analyzing and making investments we typically have to face a trade-off between
 how much risk (or uncertainty) we are going to allow to affect our investment,
 and how strong our appetite for gains or returns is. Typically, we know that
 an investment that has larger swings in either positive or negative direction
@@ -127,61 +131,64 @@ The data set provides an historic aggregation over many stocks and bonds traded
 by or on NYSE, AMEX, or NASDAQ. As such it serves as a perfect index to compare
 your asset or portfolio to.</p>
 <p>In order to use the data set in R, I wrote a small piece of code utilizing the
-base and typical tidyverse packages, i.e. readr for reading a csv file, dplyr
+base and typical tidyverse packages, i.e. readr for reading a csv file, dplyr
 for data engineering and lubridate for date handling.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e">#&#39;@title Auxiliary Data</span>
-<span style="color:#75715e">#&#39;@name ff_3f</span>
-<span style="color:#75715e">#&#39;@author Christian Bitter</span>
-<span style="color:#75715e">#&#39;@description Downloads the Fama French 3 Factor data set and structures it as</span>
-<span style="color:#75715e">#&#39;monthly and yearly components. Each component provides the same factors</span>
-<span style="color:#75715e">#&#39;More information about the data can be found Rm-Rf (the excess return on the market, value-weight return),</span>
-<span style="color:#75715e">#&#39;SMB (Small minus big), HML (High minus Low) and Rf (risk free rate).</span>
-<span style="color:#75715e">#&#39;here: \url{https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/f-f_factors.html}.</span>
-<span style="color:#75715e">#&#39;@returns A list with two entries yearly and monthly representing the FF yearly</span>
-<span style="color:#75715e">#&#39;and monthly aggregates.</span>
-<span style="color:#75715e">#&#39;@export</span>
-ff_3f <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">function</span>() {
-  <span style="color:#a6e22e">library</span>(readr);
-  <span style="color:#a6e22e">library</span>(dplyr);
-  <span style="color:#a6e22e">library</span>(lubridate);
+<pre class="r"><code>#&#39;@title Auxiliary Data
+#&#39;@name ff_3f
+#&#39;@author Christian Bitter
+#&#39;@description Downloads the Fama French 3 Factor data set and structures it as
+#&#39;monthly and yearly components. Each component provides the same factors
+#&#39;More information about the data can be found Rm-Rf (the excess return on the market, value-weight return),
+#&#39;SMB (Small minus big), HML (High minus Low) and Rf (risk free rate).
+#&#39;here: \url{https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/f-f_factors.html}.
+#&#39;@returns A list with two entries yearly and monthly representing the FF yearly
+#&#39;and monthly aggregates.
+#&#39;@export
+ff_3f &lt;- function() {
+  library(readr);
+  library(dplyr);
+  library(lubridate);
 
-  fp <span style="color:#f92672">&lt;-</span> <span style="color:#e6db74">&#34;https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Research_Data_Factors_CSV.zip&#34;</span>;
-  temp <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">tempfile</span>()
-  <span style="color:#a6e22e">download.file</span>(fp, temp)
-  temp_dir <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">tempdir</span>();
+  fp &lt;- &quot;https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Research_Data_Factors_CSV.zip&quot;;
+  temp &lt;- tempfile()
+  download.file(fp, temp)
+  temp_dir &lt;- tempdir();
 
-  <span style="color:#a6e22e">unzip</span>(zipfile <span style="color:#f92672">=</span> temp, exdir <span style="color:#f92672">=</span> temp_dir);
-  data_fp <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">file.path</span>(temp_dir, <span style="color:#e6db74">&#34;F-F_Research_Data_Factors.CSV&#34;</span>);
-  data_df <span style="color:#f92672">&lt;-</span> readr<span style="color:#f92672">::</span><span style="color:#a6e22e">read_csv</span>(data_fp, skip_empty_rows <span style="color:#f92672">=</span> T, skip <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>);
-  <span style="color:#a6e22e">unlink</span>(temp_dir);
-  <span style="color:#a6e22e">unlink</span>(temp);
+  unzip(zipfile = temp, exdir = temp_dir);
+  data_fp &lt;- file.path(temp_dir, &quot;F-F_Research_Data_Factors.CSV&quot;);
+  data_df &lt;- readr::read_csv(data_fp, skip_empty_rows = T, skip = 2);
+  unlink(temp_dir);
+  unlink(temp);
 
-  <span style="color:#75715e"># the original data contains the copyright in the last row, this will be empty</span>
-  <span style="color:#75715e"># so skip it.</span>
-  data_df <span style="color:#f92672">&lt;-</span> data_df[<span style="color:#f92672">-</span><span style="color:#a6e22e">nrow</span>(data_df), ];
+  # the original data contains the copyright in the last row, this will be empty
+  # so skip it.
+  data_df &lt;- data_df[-nrow(data_df), ];
 
-  <span style="color:#75715e"># clean up the names</span>
-  <span style="color:#a6e22e">names</span>(data_df) <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;date&#34;</span>, <span style="color:#e6db74">&#34;RmxRf&#34;</span>, <span style="color:#e6db74">&#34;SMB&#34;</span>, <span style="color:#e6db74">&#34;HML&#34;</span>, <span style="color:#e6db74">&#34;Rf&#34;</span>);
+  # clean up the names
+  names(data_df) &lt;- c(&quot;date&quot;, &quot;RmxRf&quot;, &quot;SMB&quot;, &quot;HML&quot;, &quot;Rf&quot;);
 
-  <span style="color:#75715e"># convert date from real to int</span>
-  data_df <span style="color:#f92672">&lt;-</span> data_df <span style="color:#f92672">%&gt;%</span> dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">mutate</span>(date <span style="color:#f92672">=</span> <span style="color:#a6e22e">as.integer</span>(date));
+  # convert date from real to int and convert rates to fractions
+  data_df &lt;- data_df %&gt;%
+    dplyr::mutate(date = as.integer(date)) %&gt;%
+    dplyr::mutate(RmxRf = RmxRf / 100.,
+                  Rf = Rf / 100.);
 
-  <span style="color:#75715e"># the file contains monthly and yearly aggregate, so pay attention</span>
-  monthly_df <span style="color:#f92672">&lt;-</span> data_df <span style="color:#f92672">%&gt;%</span>
-    dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">filter</span>(date <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">10000</span>) <span style="color:#f92672">%&gt;%</span>
-    dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">mutate</span>(date <span style="color:#f92672">=</span> lubridate<span style="color:#f92672">::</span><span style="color:#a6e22e">ymd</span>(date, truncated <span style="color:#f92672">=</span> <span style="color:#ae81ff">1L</span>));
+  # the file contains monthly and yearly aggregate, so pay attention
+  monthly_df &lt;- data_df %&gt;%
+    dplyr::filter(date &gt;= 10000) %&gt;%
+    dplyr::mutate(date = lubridate::ymd(date, truncated = 1L));
 
-  <span style="color:#75715e"># since the yearly data is at most 2021 - we can filter out all rows &lt; 10000</span>
-  yearly_df <span style="color:#f92672">&lt;-</span> data_df <span style="color:#f92672">%&gt;%</span>
-    dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">filter</span>(date <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">10000</span>) <span style="color:#f92672">%&gt;%</span>
-    dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">mutate</span>(date <span style="color:#f92672">=</span> lubridate<span style="color:#f92672">::</span><span style="color:#a6e22e">ymd</span>(date, truncated <span style="color:#f92672">=</span> <span style="color:#ae81ff">2L</span>));
+  # since the yearly data is at most 2021 - we can filter out all rows &lt; 10000
+  yearly_df &lt;- data_df %&gt;%
+    dplyr::filter(date &lt; 10000) %&gt;%
+    dplyr::mutate(date = lubridate::ymd(date, truncated = 2L));
 
-  <span style="color:#a6e22e">return</span>(<span style="color:#a6e22e">list</span>(
-    <span style="color:#e6db74">&#34;yearly&#34;</span> <span style="color:#f92672">=</span> yearly_df,
-    <span style="color:#e6db74">&#34;monthly&#34;</span> <span style="color:#f92672">=</span> monthly_df
+  return(list(
+    &quot;yearly&quot; = yearly_df,
+    &quot;monthly&quot; = monthly_df
   ));
-}
-</code></pre></div><p>You will also find the function in the latest update to the cbFinance package on
+}</code></pre>
+<p>You will also find the function in the latest update to the cbFinance package on
 <a href="https://github.com/christianbitter/cbFinance">Github</a>.</p>
 
     </div>
