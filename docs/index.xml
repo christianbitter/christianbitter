@@ -6,7 +6,16 @@
     <description>Recent content on Christian Bitter</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Getting Fama French 3 Factor Data</title>
+      <link>/post/2021-03-20-getting-fama-french-3-factor-data/</link>
+      <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2021-03-20-getting-fama-french-3-factor-data/</guid>
+      <description>When analyzing and making investments we typically have to face a trade-off between how much risk (or uncertainty) we are going to allow to affect our investment, and how strong our appetite for gains or returns is. Typically, we know that an investment that has larger swings in either positive or negative direction and an investment that has more of such swings is an investment that we would consider as being riskier when compared to an investment that stays flatter overall (e.</description>
+    </item>
+    
     <item>
       <title>A full-stack data scientist in the mlops-sphere</title>
       <link>/post/2021-02-03-a-full-stack-data-scientist-in-the-mlops-sphere/</link>
