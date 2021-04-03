@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>technology on Christian Bitter</title>
+    <link>/tags/technology/</link>
+    <description>Recent content in technology on Christian Bitter</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/technology/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Perspectives on Machine Learning and AI Strategy – Machine Learning as a general-purpose technology?</title>
+      <link>/post/2021-03-28-perspectives-on-machine-learning-and-ai-strategy-ml-as-a-general-purpose-technology/</link>
+      <pubDate>Sun, 28 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2021-03-28-perspectives-on-machine-learning-and-ai-strategy-ml-as-a-general-purpose-technology/</guid>
+      <description>My aim with this series on business-oriented and strategy-related topics is to present a different perspective on Machine Learning (ML). Coming from an enterprise-start-up setting, I will reference somewhat current works that at their core do not deal with the technology (libraries, frameworks, model architectures, algorithms) itself as their primary focal point, but rather aim to explore ML from a (general-purpose) technology and influence perspective. I believe, the field has already great coverage of the technological advancements made in either arena relating to ML, Artificial Intelligence (AI) or Data Analytics.</description>
+    </item>
+    
+  </channel>
+</rss>

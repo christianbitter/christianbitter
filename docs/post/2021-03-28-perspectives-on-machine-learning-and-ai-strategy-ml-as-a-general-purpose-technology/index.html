@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>Perspectives on Machine Learning and AI Strategy – Machine Learning as a general-purpose technology? // Christian Bitter</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.76.5" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Christian Bitter" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="../../css/main.min.88e7083eff65effb7485b6e6f38d10afbec25093a6fac42d734ce9024d3defbd.css" />
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-39601084-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Perspectives on Machine Learning and AI Strategy – Machine Learning as a general-purpose technology?"/>
+<meta name="twitter:description" content="My aim with this series on business-oriented and strategy-related topics is to present a different perspective on Machine Learning (ML). Coming from an enterprise-start-up setting, I will reference somewhat current works that at their core do not deal with the technology (libraries, frameworks, model architectures, algorithms) itself as their primary focal point, but rather aim to explore ML from a (general-purpose) technology and influence perspective. I believe, the field has already great coverage of the technological advancements made in either arena relating to ML, Artificial Intelligence (AI) or Data Analytics."/>
+
+    <meta property="og:title" content="Perspectives on Machine Learning and AI Strategy – Machine Learning as a general-purpose technology?" />
+<meta property="og:description" content="My aim with this series on business-oriented and strategy-related topics is to present a different perspective on Machine Learning (ML). Coming from an enterprise-start-up setting, I will reference somewhat current works that at their core do not deal with the technology (libraries, frameworks, model architectures, algorithms) itself as their primary focal point, but rather aim to explore ML from a (general-purpose) technology and influence perspective. I believe, the field has already great coverage of the technological advancements made in either arena relating to ML, Artificial Intelligence (AI) or Data Analytics." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/2021-03-28-perspectives-on-machine-learning-and-ai-strategy-ml-as-a-general-purpose-technology/" />
+<meta property="article:published_time" content="2021-03-28T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-03-28T00:00:00+00:00" />
+
+    
+    
+    <style>
+      ul.menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      ul.meu li {
+        border-left: 10px solid #666;
+        border-bottom: 1px solid #666;
+      }      
+    </style>
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="../../"><img class="app-header-avatar" src="../../avatar.jpg" alt="Christian Bitter" /></a>
+      <h1>Christian Bitter</h1>
+      <p>I am a Business Intelligence Leader, full-stack Data Scientist in the digital Agriculture space. I am always on the look-out to use data and digital technology to deliver value that can profoundly transform people&#39;s life in positive sustainable way.</p>
+      
+      <nav>
+        <ul class="menu">
+          
+          <li><a href="../../post/">Home</a></li>
+          
+          <li><a href="../../tags/">Tags</a></li>
+          
+          <li><a href="../../categories/">Categories</a></li>
+          
+        </ul>
+        <hr/>
+      </nav>      
+      
+      <div class="app-header-social">
+        
+          <a target="_blank" href="https://github.com/christianbitter" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://twitter.com/christi26164848" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-twitter">
+  <title>twitter</title>
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+</svg></a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Perspectives on Machine Learning and AI Strategy – Machine Learning as a general-purpose technology?</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Mar 28, 2021
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          11 min read
+        </div><div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line>
+</svg>
+          <a class="tag" href="../../tags/machine-learning/">machine-learning</a><a class="tag" href="../../tags/strategy/">strategy</a><a class="tag" href="../../tags/technology/">technology</a></div></div>
+    </header>
+    <div class="post-content">
+      
+<script src="../../rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>My aim with this series on business-oriented and strategy-related topics is to present a different perspective on Machine Learning (ML). Coming from an enterprise-start-up setting, I will reference somewhat current works that at their core do not deal with the technology (libraries, frameworks, model architectures, algorithms) itself as their primary focal point, but rather aim to explore ML from a (general-purpose) technology and influence perspective. I believe, the field has already great coverage of the technological advancements made in either arena relating to ML, Artificial Intelligence (AI) or Data Analytics. Just head over to <a href="https://arxiv.org/" title="https://arxiv.org/">arxiv</a> and get updated on the latest in the field.</p>
+<p>Clearly, many of these contributions bring clarity in terms of ML’s what and how. That is, what should be done from a technical point of view or how to build a ML-powered application or system for a challenge. But in many cases, these works are not the primary drivers of the equally critical question of Why. That is, should something be realized as a ML endeavor or not, or how to justify doing something not. These types of questions are actually raised not that often within the community. Very often especially, if an economy is undergoing a transition or is being infused by a trend, often a problem setting is shoehorned – this looks like or someone else is doing like this. Or a similar moniker, instead of understanding a problem and fixing it at the root (point of greatest gains), let us see what kind of solution (fancy en-vogue technology) can mildly adapt the outcome.</p>
+<p>Consequently, I have two goals with this series, (i) present one view on the topic that may or may not resonate with you and (ii) spark a discussion to challenge your and my view on these topics. If in the end, we all end up a tiny bit wiser and can argue for or against a certain topic in a more nuanced way, then I have fulfilled my personal goal and hopefully made your time on here worthwhile. With the introductory remarks made …</p>
+<div id="introduction" class="section level2">
+<h2>Introduction</h2>
+<p>Agrawal, Gans and Goldfarb <span class="citation">(<a href="#ref-agrawal_2018" role="doc-biblioref">Ajaj, Gans, and Goldfarb 2018</a>)</span> argue that ML, or as they also call it prediction machines, are a powerful GPT that will have utility across a wide range of applications. In denoting AI as a GPT, ML can be reduced from its technological attachment, and can be subjected to treatment through the lens of economics. That is, it is exposed to the forces of supply and demand. Interestingly, the term GPT is itself already not neutral. In fact, the traditional view of economics is that economic growth is primarily driven by the accumulation of inputs including labor and capital. However, in more recent thinking the role of innovations that have ex post altered the fabric of our social structures and economic systems in profound and drastic ways and have upended economic growth, is analyzed and expressed through the term GPT <span class="citation">(<a href="#ref-gpt_wiki_2021" role="doc-biblioref">Wikipedia contributors 2021a</a>)</span>. This somewhat vaguely dramatic characterization is a first hint at that your kitchen’s blender might not be a GPT whereas your shiny car might be.</p>
+</div>
+<div id="what-is-technology" class="section level2">
+<h2>What is Technology?</h2>
+<p>Unfortunately, aiming to elucidate GPT from its root term technology brings us only so much clarity. The meaning of the word technology has undergone many changes throughout the last 100 years or so. While we find the word “Technologie”<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> in the German language, the meaning between the two could not be further apart. Looking into Merriam Webster’s definition, we find <a href="https://www.merriam-webster.com/dictionary/technology" title="Technology Definition">technology</a> being defined as either the process, a process characteristic or the result (material, immaterial) of applying knowledge in particular domains like engineering. According to Wikipedia</p>
+<blockquote>
+<p>Technology can be most broadly defined as the entities, both material and immaterial, created by the application of mental and physical effort in order to achieve some value</p>
+</blockquote>
+<p><span class="citation">(<a href="#ref-technology_wiki_2021" role="doc-biblioref">Wikipedia contributors 2021b</a>)</span>.</p>
+<p>Here, we can see that technology is ascribed certain elements that in popular knowledge would be more associated with Science or the field of Engineering. For example, while we have come to think of Science as the act of creation using mental faculties (and physical reality in the process), Science refers to a particular process to gain knowledge about the physical or material world. The particularities of this process are its systematic nature, and the use of observation, and experimentation. This is in contrast with another process that achieves to gain knowledge from the world - Philosophy! Looking at our characterization of Technology above we realize that most notably that systematic, observation and experimentation are missing. So, within Technology we might find the outcome of a non-systematic chaotic or random spark of ingenuity that after the fact is subjected to the scientific method. See, Science is characterized by the use of the Scientific method (itself a technology?), and is being practiced by Scientists.</p>
+<p>Taking a look at the definition of Engineering let’s us realize that it is a goal-oriented<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> process of designing and creating to exploit phenomena for practical human needs. Engineering may or may not rest on Scientific foundations, i.e. “what works - works.”</p>
+<p>As can be seen, Technologies are not usually exclusively products of science, technology development may
+draw upon many fields of knowledge, including philosophical, scientific, engineering, mathematical, linguistic, and historical knowledge to produce some result. In many practical settings Science, Technology and Engineering are often considered as one, which admittedly makes our life a bit more difficult when aiming to argue about X being something or not. And so it comes with no surprise to see that Technology, Science or Engineering may be at the input side of one another in some cases or at the consumption side in other instances. In that sense we are all technologists, may in some instances be engineers and some ways also be scientists.</p>
+</div>
+<div id="from-technology-to-gpt" class="section level2">
+<h2>From Technology to GPT</h2>
+<p>Now, being a somewhat new school of thought, a universal theoretical framework for identifying, characterizing, evaluating and comparing GPTs does not yet exist. While any technology that is a product, process, or an organizational system can potentially be a GPT, Lipsey expresses four criteria a technology must have, to classify as a GPT:</p>
+<ol style="list-style-type: decimal">
+<li>It is a single, recognizable generic technology</li>
+<li>Initially has much scope for improvement but comes to be widely used across the economy</li>
+<li>Has many different uses</li>
+<li>Creates many spillover effects</li>
+</ol>
+<p>Among the examples cited as GPT, we find the wheel, electricity, the automobile but also lean production, nanotechnology, or the matter of this topic artificial intelligence (AI). While not surprising if we look at what a GPT can be product, process, or organizational system, it may seem strange to arrange rather concrete things like the wheel or a computer alongside a process like mass production which under its hood would not be possible without the massive exploitation of other GPT including factory system, or electricity.</p>
+<p>The same can be said for the four criteria laid out to characterize a GPT. Arguably, they are sufficiently general to treat the vastly different example GPT under a single roof. However, we also find some touching points to the technologies that fit into the “disruption” model put forward by Christensen <span class="citation">(<a href="#ref-christensen_1997" role="doc-biblioref">Christensen 1997</a>)</span>. Actually, we might argue that all four characteristics would in hindsight be useful to describe a “disrupting” technology, such as a product or technology being initially very restricted and only appealing to a select few target customers, but through the adoption and progressive advancement its scope of use, technological deficiencies and price point are improved and thereby the product ultimately appeals to a much broader market (the market originally protected by the incumbent), barriers to adoption are lowered all the while the incumbent has a hard time competing on the now distorted playing field. Points 1, 3 and 4 may not be necessary for such a disruptive innovation but some of the examples discussed by Christensen exhibit these characteristics and are (co-) incidentally also referenced here as a GPT.</p>
+<p>Unfortunately, concepts such as GPT or disruption may only be applied with hindsight or something that we might term extreme visionary or wishful thinking, and are less suitable to judge “a book by its covers” (e.g, classify or predict). Surely, we find numerous visionaries and luminaries that predicted certain events like space travel, electrification, i.e., that grasped a technology’s potential on its fundamental level and saw these applications noted under point 2 and 3. However, as we know talk is cheap and for any vision that came true there are a plethora of others that did not live up to reality. This phenomenon may even become more pronounced in our hyper-connected world were (i) everyone can be a expert and prophet on anything, (ii) everyone can have a public opinion on everything and (iii) everyone can connect to everyone else in the matter of a like <span class="citation">(<a href="#ref-graham_2021" role="doc-biblioref">Graham 2021</a>)</span>.</p>
+<p>For example, among the cited GPTs we do not find the distributed ledger or blockchain technology (BT). Certainly, this technology has been around for quite some time, we can also recognize it as a single generic technology, at least along the lines of AI. As argued by BT advocates its usage potential is infinite, spanning from smart contracts that can revolutionize how businesses are implemented, to a universal method how trust is democratized to include different types of actors (machine, human) or the digitization of our monetary system. The same could be said about point four. Certainly, it has created spill-over effects from its origin domain to other areas (being applied in agriculture, food processing, law), and clearly, much has been said about the shortcomings of BT including the resource (energy) demands of bitcoin mining (or proof-of-value) or the problem of the many actors each aiming for their version of distributed trust which is somewhat detrimental to the promise of “no-middle-men” <span class="citation">(<a href="#ref-iredale_2020" role="doc-biblioref">Iredale 2020</a>)</span>.</p>
+<p>So, what makes BT different from AI? Is it universal consensus among technologists, scientists or XYZ, because that is non-existing. That is, where there are proponents clearly there must also be opponents of AI? Here, not in the literal sense of the agricultural workers fighting in the swing riots or weavers during the Silesian weavers uprising <span class="citation">(<a href="#ref-weaver_wiki_2020" role="doc-biblioref">Wikipedia contributors 2020</a>)</span>. But opponents criticizing the label “Intelligence.” That is, often we find that reports on new AI breakthroughs are surrounded by hyperbole, which in fairness can be perceived as being part of selling a new technology (the same holds for the BT or any other technology camp like 3D printing, nano-bots, etc.) and due to the complexity of the domain may even be outside of the reach of the informed insider. For example, we may recall the self-driving car hype around the 2014-2016-time frame <span class="citation">(<a href="#ref-guardian_2021" role="doc-biblioref">The Guardian 2021</a>)</span>. Building up from the revolutionary break throughs of deep learning in computer vision tasks, we were not shy of seeing the eventual self-driving car around the early 2020s bringing us not only new freedom, reduced car ownership and potentially new ways of working and living (why not be driven to work while we sleep). Certainly, many large technology companies like Google, Uber or Volkswagen with excellent minds and visionary experts worked and are still working towards this goal. Admittedly, reality kicked in revealing what was coined by Morozov as solutionism. That is, the welcoming of a complex technological but more so societal and governmental change process, which should be regarded and treated as such, was jumped, perceived, and attacked only as a software and hardware engineering problem – clearly one part of the equation but not the full picture <span class="citation">(<a href="#ref-mozorov_2013" role="doc-biblioref">Morozov 2013</a>)</span>. This is not to say, that we should limit our creative processes in order to recognize deficits, grasp problems, and come up with solutions, but as may have been revealed by the still on-going pandemic a global health crisis is not the same as Deep Learning on MRT images, or a block chain-powered application to store our vaccination and personal contact diary …</p>
+<p>So where does this lead us? Unfortunately, no definitive answer - sometimes insight reveals itself only in hindsight and the best we can do is consult and learn through Science, Philosophy, History …</p>
+</div>
+<div id="references" class="section level2 unnumbered">
+<h2>References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-agrawal_2018" class="csl-entry">
+Ajaj, Agrawal, Joshua Gans, and Avi Goldfarb. 2018. <em>Prediction Machines - the Simple Economics of Artificial Intelligence</em>. 1st ed. Boston, MA, USA: Harvard Business School Publishing.
+</div>
+<div id="ref-christensen_1997" class="csl-entry">
+Christensen, Clayton M. 1997. <em>The Innovator’s Dilemma</em>. 1st ed. Boston, MA, USA: Harvard Business Review.
+</div>
+<div id="ref-graham_2021" class="csl-entry">
+Graham, Ruth. 2021. <span>“Christian Prophets Are on the Rise. What Happens When They’re Wrong?”</span> 101blockchains. <a href="https://www.nytimes.com/2021/02/11/us/christian-prophets-predictions.html">https://www.nytimes.com/2021/02/11/us/christian-prophets-predictions.html</a>.
+</div>
+<div id="ref-iredale_2020" class="csl-entry">
+Iredale, Gwyneth. 2020. <span>“Top Disadvantages of Blockchain Technology.”</span> 101blockchains. <a href="https://101blockchains.com/disadvantages-of-blockchain/">https://101blockchains.com/disadvantages-of-blockchain/</a>.
+</div>
+<div id="ref-mozorov_2013" class="csl-entry">
+Morozov, Evgeny. 2013. <em>To Save Everything, Click Here: The Folly of Technological Solutionism</em>. 1st ed. New York, NY, USA: PublicAffairs.
+</div>
+<div id="ref-guardian_2021" class="csl-entry">
+The Guardian. 2021. <span>“"’Peak Hype’: Why the Driverless Car Revolution Has Stalled".”</span> 2021. <a href="https://www.theguardian.com/technology/2021/jan/03/peak-hype-driverless-car-revolution-uber-robotaxis-autonomous-vehicle">https://www.theguardian.com/technology/2021/jan/03/peak-hype-driverless-car-revolution-uber-robotaxis-autonomous-vehicle</a>.
+</div>
+<div id="ref-weaver_wiki_2020" class="csl-entry">
+Wikipedia contributors. 2020. <span>“Weavers’ Uprising — <span>Wikipedia</span><span>,</span> the Free Encyclopedia.”</span> <a href="https://en.wikipedia.org/w/index.php?title=Weavers%27_Uprising&amp;oldid=986329360">https://en.wikipedia.org/w/index.php?title=Weavers%27_Uprising&amp;oldid=986329360</a>.
+</div>
+<div id="ref-gpt_wiki_2021" class="csl-entry">
+———. 2021a. <span>“General-Purpose Technology — <span>Wikipedia</span><span>,</span> the Free Encyclopedia.”</span> <a href="https://en.wikipedia.org/w/index.php?title=General-purpose_technology&amp;oldid=1005593317">https://en.wikipedia.org/w/index.php?title=General-purpose_technology&amp;oldid=1005593317</a>.
+</div>
+<div id="ref-technology_wiki_2021" class="csl-entry">
+———. 2021b. <span>“Technology — <span>Wikipedia</span><span>,</span> the Free Encyclopedia.”</span> <a href="https://en.wikipedia.org/w/index.php?title=Technology&amp;oldid=1015267555">https://en.wikipedia.org/w/index.php?title=Technology&amp;oldid=1015267555</a>.
+</div>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>In German, Technology refers to the science and education of technics/engineering/procedures (German Technik) to the planning, design and creation of industrial products. Here, we see that the English technology conflates the two German words “Technologie” and “Technik.”<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>Neither Science nor Technology do not have a practical goal other than gain knowledge or produce outcome.<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+
+    </div>
+    <div class="post-footer">
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "christianbitter" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

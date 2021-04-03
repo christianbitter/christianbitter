@@ -1,0 +1,71 @@
+---
+title: Perspectives on Machine Learning and AI Strategy – Machine Learning as a general-purpose
+  technology?
+author: Christian Bitter
+date: '2021-03-28'
+slug: []
+categories:
+  - General
+tags:
+  - machine-learning
+  - strategy
+  - technology
+output: 
+  html_document: 
+    toc: yes
+bibliography: bibliography_pmlai.bib
+# csl: chicago-fullnote-bibliography.csl
+biblio-style: authoryear
+---
+
+My aim with this series on business-oriented and strategy-related topics is to present a different perspective on Machine Learning (ML). Coming from an enterprise-start-up setting, I will reference somewhat current works that at their core do not deal with the technology (libraries, frameworks, model architectures, algorithms) itself as their primary focal point, but rather aim to explore ML from a (general-purpose) technology and influence perspective. I believe, the field has already great coverage of the technological advancements made in either arena relating to ML, Artificial Intelligence (AI) or Data Analytics. Just head over to [arxiv](https://arxiv.org/ "https://arxiv.org/") and get updated on the latest in the field.
+
+Clearly, many of these contributions bring clarity in terms of ML's what and how. That is, what should be done from a technical point of view or how to build a ML-powered application or system for a challenge. But in many cases, these works are not the primary drivers of the equally critical question of Why. That is, should something be realized as a ML endeavor or not, or how to justify doing something not. These types of questions are actually raised not that often within the community. Very often especially, if an economy is undergoing a transition or is being infused by a trend, often a problem setting is shoehorned -- this looks like or someone else is doing like this. Or a similar moniker, instead of understanding a problem and fixing it at the root (point of greatest gains), let us see what kind of solution (fancy en-vogue technology) can mildly adapt the outcome.
+
+Consequently, I have two goals with this series, (i) present one view on the topic that may or may not resonate with you and (ii) spark a discussion to challenge your and my view on these topics. If in the end, we all end up a tiny bit wiser and can argue for or against a certain topic in a more nuanced way, then I have fulfilled my personal goal and hopefully made your time on here worthwhile. With the introductory remarks made ...
+
+## Introduction
+
+Agrawal, Gans and Goldfarb [@agrawal_2018] argue that ML, or as they also call it prediction machines, are a powerful GPT that will have utility across a wide range of applications. In denoting AI as a GPT, ML can be reduced from its technological attachment, and can be subjected to treatment through the lens of economics. That is, it is exposed to the forces of supply and demand. Interestingly, the term GPT is itself already not neutral. In fact, the traditional view of economics is that economic growth is primarily driven by the accumulation of inputs including labor and capital. However, in more recent thinking the role of innovations that have ex post altered the fabric of our social structures and economic systems in profound and drastic ways and have upended economic growth, is analyzed and expressed through the term GPT [@gpt_wiki_2021]. This somewhat vaguely dramatic characterization is a first hint at that your kitchen's blender might not be a GPT whereas your shiny car might be.
+
+## What is Technology?
+
+Unfortunately, aiming to elucidate GPT from its root term technology brings us only so much clarity. The meaning of the word technology has undergone many changes throughout the last 100 years or so. While we find the word "Technologie"[^1] in the German language, the meaning between the two could not be further apart. Looking into Merriam Webster's definition, we find [technology](https://www.merriam-webster.com/dictionary/technology "Technology Definition") being defined as either the process, a process characteristic or the result (material, immaterial) of applying knowledge in particular domains like engineering. According to Wikipedia
+
+[^1]: In German, Technology refers to the science and education of technics/engineering/procedures (German Technik) to the planning, design and creation of industrial products. Here, we see that the English technology conflates the two German words "Technologie" and "Technik".
+
+> Technology can be most broadly defined as the entities, both material and immaterial, created by the application of mental and physical effort in order to achieve some value
+
+[@technology_wiki_2021].
+
+Here, we can see that technology is ascribed certain elements that in popular knowledge would be more associated with Science or the field of Engineering. For example, while we have come to think of Science as the act of creation using mental faculties (and physical reality in the process), Science refers to a particular process to gain knowledge about the physical or material world. The particularities of this process are its systematic nature, and the use of observation, and experimentation. This is in contrast with another process that achieves to gain knowledge from the world - Philosophy! Looking at our characterization of Technology above we realize that most notably that systematic, observation and experimentation are missing. So, within Technology we might find the outcome of a non-systematic chaotic or random spark of ingenuity that after the fact is subjected to the scientific method. See, Science is characterized by the use of the Scientific method (itself a technology?), and is being practiced by Scientists.
+
+Taking a look at the definition of Engineering let's us realize that it is a goal-oriented[^2] process of designing and creating to exploit phenomena for practical human needs. Engineering may or may not rest on Scientific foundations, i.e. "what works - works".
+
+[^2]: Neither Science nor Technology do not have a practical goal other than gain knowledge or produce outcome.
+
+As can be seen, Technologies are not usually exclusively products of science, technology development may
+draw upon many fields of knowledge, including philosophical, scientific, engineering, mathematical, linguistic, and historical knowledge to produce some result. In many practical settings Science, Technology and Engineering are often considered as one, which admittedly makes our life a bit more difficult when aiming to argue about X being something or not. And so it comes with no surprise to see that Technology, Science or Engineering may be at the input side of one another in some cases or at the consumption side in other instances. In that sense we are all technologists, may in some instances be engineers and some ways also be scientists.
+
+## From Technology to GPT
+
+Now, being a somewhat new school of thought, a universal theoretical framework for identifying, characterizing, evaluating and comparing GPTs does not yet exist. While any technology that is a product, process, or an organizational system can potentially be a GPT, Lipsey expresses four criteria a technology must have, to classify as a GPT:
+
+1.  It is a single, recognizable generic technology
+2.  Initially has much scope for improvement but comes to be widely used across the economy
+3.  Has many different uses
+4.  Creates many spillover effects
+
+Among the examples cited as GPT, we find the wheel, electricity, the automobile but also lean production, nanotechnology, or the matter of this topic artificial intelligence (AI). While not surprising if we look at what a GPT can be product, process, or organizational system, it may seem strange to arrange rather concrete things like the wheel or a computer alongside a process like mass production which under its hood would not be possible without the massive exploitation of other GPT including factory system, or electricity.
+
+The same can be said for the four criteria laid out to characterize a GPT. Arguably, they are sufficiently general to treat the vastly different example GPT under a single roof. However, we also find some touching points to the technologies that fit into the "disruption" model put forward by Christensen [@christensen_1997]. Actually, we might argue that all four characteristics would in hindsight be useful to describe a "disrupting" technology, such as a product or technology being initially very restricted and only appealing to a select few target customers, but through the adoption and progressive advancement its scope of use, technological deficiencies and price point are improved and thereby the product ultimately appeals to a much broader market (the market originally protected by the incumbent), barriers to adoption are lowered all the while the incumbent has a hard time competing on the now distorted playing field. Points 1, 3 and 4 may not be necessary for such a disruptive innovation but some of the examples discussed by Christensen exhibit these characteristics and are (co-) incidentally also referenced here as a GPT.
+
+Unfortunately, concepts such as GPT or disruption may only be applied with hindsight or something that we might term extreme visionary or wishful thinking, and are less suitable to judge "a book by its covers" (e.g, classify or predict). Surely, we find numerous visionaries and luminaries that predicted certain events like space travel, electrification, i.e., that grasped a technology's potential on its fundamental level and saw these applications noted under point 2 and 3. However, as we know talk is cheap and for any vision that came true there are a plethora of others that did not live up to reality. This phenomenon may even become more pronounced in our hyper-connected world were (i) everyone can be a expert and prophet on anything, (ii) everyone can have a public opinion on everything and (iii) everyone can connect to everyone else in the matter of a like [@graham_2021].
+
+For example, among the cited GPTs we do not find the distributed ledger or blockchain technology (BT). Certainly, this technology has been around for quite some time, we can also recognize it as a single generic technology, at least along the lines of AI. As argued by BT advocates its usage potential is infinite, spanning from smart contracts that can revolutionize how businesses are implemented, to a universal method how trust is democratized to include different types of actors (machine, human) or the digitization of our monetary system. The same could be said about point four. Certainly, it has created spill-over effects from its origin domain to other areas (being applied in agriculture, food processing, law), and clearly, much has been said about the shortcomings of BT including the resource (energy) demands of bitcoin mining (or proof-of-value) or the problem of the many actors each aiming for their version of distributed trust which is somewhat detrimental to the promise of "no-middle-men" [@iredale_2020].
+
+So, what makes BT different from AI? Is it universal consensus among technologists, scientists or XYZ, because that is non-existing. That is, where there are proponents clearly there must also be opponents of AI? Here, not in the literal sense of the agricultural workers fighting in the swing riots or weavers during the Silesian weavers uprising [@weaver_wiki_2020]. But opponents criticizing the label "Intelligence". That is, often we find that reports on new AI breakthroughs are surrounded by hyperbole, which in fairness can be perceived as being part of selling a new technology (the same holds for the BT or any other technology camp like 3D printing, nano-bots, etc.) and due to the complexity of the domain may even be outside of the reach of the informed insider. For example, we may recall the self-driving car hype around the 2014-2016-time frame [@guardian_2021]. Building up from the revolutionary break throughs of deep learning in computer vision tasks, we were not shy of seeing the eventual self-driving car around the early 2020s bringing us not only new freedom, reduced car ownership and potentially new ways of working and living (why not be driven to work while we sleep). Certainly, many large technology companies like Google, Uber or Volkswagen with excellent minds and visionary experts worked and are still working towards this goal. Admittedly, reality kicked in revealing what was coined by Morozov as solutionism. That is, the welcoming of a complex technological but more so societal and governmental change process, which should be regarded and treated as such, was jumped, perceived, and attacked only as a software and hardware engineering problem -- clearly one part of the equation but not the full picture [@mozorov_2013]. This is not to say, that we should limit our creative processes in order to recognize deficits, grasp problems, and come up with solutions, but as may have been revealed by the still on-going pandemic a global health crisis is not the same as Deep Learning on MRT images, or a block chain-powered application to store our vaccination and personal contact diary ...
+
+So where does this lead us? Unfortunately, no definitive answer - sometimes insight reveals itself only in hindsight and the best we can do is consult and learn through Science, Philosophy, History ...
+
+## References
